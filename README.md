@@ -7,8 +7,9 @@ Python 3.8+ installed on your system. <br><br>
 Open your terminal or command prompt and navigate to the project folder. <br> <br>
 Then type the following commands <br><br>
 
-```git clone https://github.com/Skanda098/Code-Reviewer.git```
+```git clone https://github.com/Skanda098/Code-Reviewer.git```<br>
 
+```cd Code-Reviewer```<br><br>
 ``` python -m venv venv ``` <br><br>
 ``` venv\Scripts\activate ``` <br><br>
 ``` pip install fastapi uvicorn pydantic deep-translator ```<br><br>
