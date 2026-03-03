@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Zen Code Reviewer</title>
+</head>
+<body class="bg-zinc-950 text-zinc-300 font-mono min-h-screen flex flex-col items-center justify-center selection:bg-emerald-500/30 p-4">
+    
+    <div class="w-full max-w-7xl flex flex-col gap-6">
+        <div class="flex flex-col sm:flex-row justify-between items-end gap-4 border-b border-zinc-800 pb-4">
+            <div>
+                <h1 class="text-3xl tracking-[0.2em] uppercase font-bold text-zinc-400">
+                    Code<span class="text-emerald-500">Lingo</span>
+                </h1>
+                <p class="text-xs text-zinc-500 mt-2">Open-Source Comment Translator</p>
+            </div>
+            <button 
+                id="submitBtn" 
+                class="px-8 py-3 bg-emerald-900/20 text-emerald-400 border border-emerald-800/50 hover:bg-emerald-800 hover:text-white transition-all uppercase tracking-widest text-xs rounded shadow-lg">
+                Translate Comments
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <div class="flex flex-col gap-2">
+                <label class="text-xs text-zinc-500 uppercase tracking-widest pl-1">Original Source</label>
+                <textarea 
+                    id="codeInput" 
+                    class="w-full h-[65vh] bg-zinc-900 border border-zinc-800 p-6 rounded outline-none text-sm text-zinc-300 focus:border-zinc-600 transition-colors resize-none shadow-2xl leading-relaxed whitespace-pre" 
+                    placeholder="Paste code with foreign comments here..."></textarea>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <div class="flex justify-between items-center pl-1 pr-1">
+                    <label id="statusLabel" class="text-xs text-zinc-500 uppercase tracking-widest">Translated Output</label>
+                    <button id="copyBtn" class="text-xs text-zinc-500 hover:text-emerald-400 transition-colors hidden uppercase tracking-widest cursor-pointer">
+                        [ Copy Code ]
+                    </button>
+                </div>
+                <textarea 
+                    id="outputArea" 
+                    class="w-full h-[65vh] bg-zinc-950 border border-zinc-800 p-6 rounded outline-none text-sm text-emerald-50 transition-colors resize-none shadow-inner leading-relaxed whitespace-pre" 
+                    readonly 
+                    placeholder="Results will appear here..."></textarea>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
