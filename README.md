@@ -3,7 +3,7 @@
 <h3>Requirements : </h3>
 Python 3.8+ installed on your system. <br><br>
 
-<h3>Procedure :</h3>
+<h3>Procedure : (preferable to use cmd) </h3>
 Open your terminal or command prompt and navigate to the project folder. <br> <br>
 Then type the following commands <br><br>
 
